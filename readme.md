@@ -39,3 +39,5 @@
 		<filter-name>characterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
+	在服务器上观察日志找问题时，接口调用的入参中常含有文件的base64，大量的这种无意义报文打印在屏幕上面，有碍观察。LogUtil工具类可以将这种过长的入参替换掉。
